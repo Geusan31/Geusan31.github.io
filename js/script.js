@@ -12,7 +12,7 @@ if(input == 'Halo') {
 }
 
 // setTime
-const tanggalTujuan = new Date('Mar 8, 2022 21:00:00').getTime();
+const tanggalTujuan = new Date('Mar 9, 2022 15:10:00').getTime();
 
 const hitungMundur = setInterval(function() {
 
