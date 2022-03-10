@@ -565,6 +565,7 @@ li:hover::after {
     -ms-transition: .7s;
     -o-transition: .7s;
 }
+/* Scroll Animations end */
 
 .end {
     width: 100%;
