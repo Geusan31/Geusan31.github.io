@@ -11,6 +11,38 @@ if(input == 'Halo') {
     alert('Halo Juga');
 }
 
+// Scroll Animations
+window.addEventListener('scroll', muncul);
+
+function muncul() {
+    let elements = document.querySelectorAll('.element');
+
+    // perulangan
+    for( let i = 0; i < elements.length; i++  ) {
+        // menangkap tinggi layar
+        let windowHeight = window.innerHeight;
+        // menangkap jarak atas element
+        let elementTopDistance = elements[i].getBoundingClientRect().top;
+        // menentukan ukuran scroll untuk memunuculkan element
+        let scrollSizes = 150;
+
+        // jika element top distance kurang dari window height dikurangi scroll sizes, maka tambahkan class tampil
+        if( elementTopDistance < windowHeight - scrollSizes ) {
+            elements[i].classList.add('tampil');
+        }
+        else {
+            elements[i].classList.remove('tampil');
+        }
+    }
+}
+
+// Scroll Animations Jquery
+$(window).on('load', function() {
+    $('.reveal').css({
+        'transform' : 'translateX(0px)',
+        'opacity' : 1
+    });
+});
 // setTime
 const tanggalTujuan = new Date('Mar 9, 2022 15:10:00').getTime();
 
