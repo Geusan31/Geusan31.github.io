@@ -57,6 +57,10 @@ body {
 
 /* Navigation */
 
+    /* .nav {
+        max-width: calc(100vh - 1rem);
+    } */
+
 .container {
     margin: 60px;
     display: flex;
@@ -221,7 +225,8 @@ li:hover::after {
     bottom: -550px;
     z-index: 1;
     margin: auto;
-    width: 69rem;
+    max-width: calc(50vh + 50%);
+    /* width: 75rem; */
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -266,7 +271,7 @@ li:hover::after {
 }
 
 .bottom-box .box1::after {
-    content: '';
+    content: '';    
     width: 0;
     height: 2px;
     display: block;
@@ -314,6 +319,7 @@ li:hover::after {
 
 .tempat {
     width: 66.6em;
+    max-width: calc(100vw - 4em);
     margin: 0 auto;
     display: flex;
 }
@@ -451,12 +457,12 @@ li:hover::after {
 }
 
 .nama.oke {
-    line-height: 30px;
+    line-height: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 320px;
+    top: 310px;
     color: #eee;
 }
 
@@ -464,10 +470,14 @@ li:hover::after {
     font-size: 1.8em;
     text-transform: uppercase;
     font-weight: bold;
+    padding: calc(5vw - 4em);
 }
 
 .nama.oke .dua.oke2 {
     font-size: 14px;
+    padding: calc(5vw - 4em);
+    text-align: center;
+    line-height: 15px;
 }
 
 .hias {
@@ -568,7 +578,7 @@ li:hover::after {
 /* Scroll Animations end */
 
 .end {
-    width: 100%;
+    max-width: 100%;
     height: 50em;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 45%, rgb(25, 34, 41) 100%), url('../img/nebula.jpg');
     background-repeat: no-repeat;
@@ -578,8 +588,13 @@ li:hover::after {
     position: relative;
 }
 
+.bungkus {
+    max-width: 100%;
+    width: calc(100vh - 1em);
+}
+
 .end .container-satu {
-    margin: 0 9em;
+    margin: 0 6.8em;
 }
 
 .end .judul-end {
@@ -601,18 +616,29 @@ li:hover::after {
     font-size: 1.3em;
 }
 
+.show {
+    transform: scale(-2);
+    -webkit-transform: scale(-2);
+    -moz-transform: scale(-2);
+    -ms-transform: scale(-2);
+    -o-transform: scale(-2);
+    opacity: 0;
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+}
+
 .end .container-satu .buka p {
     font-size: 1.3em;
     color: rgb(3, 145, 62);
+    width: 6em;
 }
 
 .end .container-satu .buka a {
     font-size: 1em;
     color: rgb(0, 255, 106);
-}
-
-.end .container-satu .buka .in {
-    display: none;
 }
 
 .end .paragraf-end {
@@ -625,34 +651,81 @@ li:hover::after {
 
 .end .qr  {
     position: relative;
-    top: -7em;
+    top: 4em;
+    display: flex;
+    left: 900px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    line-height: 30px;  
+    width: 300px;
+    height: 300px;
 }
 
 .end .qr .judul-qr {
     position: relative;
     width: 200px;
     margin: 0;
-    top: 10em;
-    left: 51em;
+    /* top: 10em; */
+    left: 0;
     color: #eee;
     font-size: 20px;
     font-weight: 500;
+    text-align: center;
 }
 
 .end .qr .paragraf-qr {
     position: relative;
     width: 200px;
     margin: 0;
-    top: 12em;
-    left: 58.2em;
+    /* top: 12em; */
+    left: 0;
     font-size: 18px;
     color: #eee;
 }
 
 .end .qr img{
     position: relative;
-    top: 15em;
-    left: 62em;
+    top: 10px;
+    /* left: -755px; */
     width: 200px;
     box-shadow: 5px 5px 10px #333, 0px 5px 10px #333, -5px -5px 10px #333, -5px -5px 10px #333, -5px -5px 10px #333, 5px -5px 10px #333,3px 3px 10px #aaaaaa, 3px 3px 10px #aaaaaa, 6px 6px 10px #aaaaaa, 7px 7px 10px #aaaaaa, 7px 7px 10px #aaaaaa, 8px 8px 10px #aaaaaa, 9px 9px 10px #aaaaaa, 7px 7px 10px #aaaaaa, 8px 8px 10px #aaaaaa, 8px 8px 10px #aaaaaa;
+    display: none;
+}
+
+.nunggu {
+    position: relative;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.waktu {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 100px;
+    font-size: 20px;
+    position: relative;
+    top: 2.8em;
+    width: 100px;
+    height: 100px;
+    border: 4px solid rgb(3, 145, 62);
+    border-radius: 50%;
+    z-index: 999;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/* Responsive */
+/* nest Hub */
+@media screen and (max-width: 1024px) {
+    
 }

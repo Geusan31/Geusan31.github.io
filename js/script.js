@@ -37,14 +37,22 @@ function muncul() {
 }
 
 // Scroll Animations Jquery
+// Animasi saat website di refresh/load
 $(window).on('load', function() {
     $('.reveal').css({
         'transform' : 'translateX(0px)',
         'opacity' : 1
     });
+
+    $('.show').css({
+        'transform' : 'scale(1)',
+        'opacity' : 1
+    });
 });
-// setTime
-const tanggalTujuan = new Date('Mar 9, 2022 15:10:00').getTime();
+// Akihr Animasi saat website di refresh/load
+
+// Atur Hari Jam Menit Detik
+const tanggalTujuan = new Date('Mar 11, 2022 16:10:00').getTime();
 
 const hitungMundur = setInterval(function() {
 
@@ -62,15 +70,66 @@ const hitungMundur = setInterval(function() {
     teks.style.textShadow = "3px 3px 4px #333";
     teks.innerHTML = 'Waktu ' + hari + ' hari ' + jam + ' jam ' + menit + ' menit ' + detik + ' detik lagi!';
 
-    let dalam = document.querySelector('.end .container-satu .buka .in');
-    // const tulisan = document.getElementById('buka');
-
     if( selisih < 0 ) {
         clearInterval(hitungMundur);
         teks.innerHTML = '<p>Click Below!</p><a href="video/index.html" target="blank">Congratulations!</a>';
-        // teks.innerHTML = <a href="../video/index.html">Conrratulations!</a>
-        // dalam.style.display = 'block'
-    }
-
-
+    }   
 }, 1000);
+// Akhir Atur Hari Jam Menit Detik
+
+// Atur Waktu saat mau memunculkan element
+const time = document.getElementById('time');
+const qr = document.querySelector('.end .qr img');
+
+setTimeout(() => {
+    time.innerHTML = '10';
+},5000);
+
+setTimeout(() => {
+    time.innerHTML = '9';
+},7000);
+
+setTimeout(() => {
+    time.innerHTML = '8';
+},9000);
+
+setTimeout(() => {
+    time.innerHTML = '7';
+},11000);
+
+setTimeout(() => {
+    time.innerHTML = '6';
+}, 13000);
+
+setTimeout(() => {
+    time.innerHTML = '5';
+}, 15000);
+
+setTimeout(() => {
+    time.innerHTML = '4';
+}, 17000);
+
+setTimeout(() => {
+    time.innerHTML = '3';
+}, 19000);
+
+setTimeout(() => {
+    time.innerHTML = '2';
+}, 21000);
+
+setTimeout(() => {
+    time.innerHTML = '1';
+}, 23000);
+
+setTimeout(() => {
+    time.innerHTML = '0';
+}, 25000);
+
+setTimeout(() => {
+    qr.style.display = 'block',
+    time.style.display = 'none';
+}, 25500);
+// Akhir Atur Waktu saat mau memunculkan element
+
+// Menyesuaikan Warna font dan warna background
+$(document).ready
