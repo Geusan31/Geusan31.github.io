@@ -131,5 +131,6 @@ setTimeout(() => {
 }, 25500);
 // Akhir Atur Waktu saat mau memunculkan element
 
-// Menyesuaikan Warna font dan warna background
-$(document).ready
+
+
+// Hamburger Menu
