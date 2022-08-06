@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F9FB;
+    height: 1000px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif, Arial, Helvetica
+}
+
+.container {
+    width: 80%;
+    /* margin: auto; */
+    height: 80%;
+    position: relative;
+    /* background-color: #0e054d; */
+}
+
+/* Awal Judul */
+.judul, .first-desc {
+    text-align: center;
+    margin: 17px 0;
+}
+
+.judul {
+    color: #0e054d;
+    font-style: bold;
+}
+
+.first-desc {
+    margin-bottom: 40px;
+    color: #a4a2bc
+}
+/* Akhir Judul */
+
+/* Awal Container Contact */
+.container-contact {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    /* height: 80%; */
+    /* padding: 20px; */
+    background-color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+/* Akhir Container Contact */
+
+/* Awal Contact Information */
+.contact-information {
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    width: 55%;
+    background-color: #3E1F92;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.contact-information h2 {
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: 500;
+    color: #f4f4f8;
+}
+
+.contact-information p {
+    margin-bottom: 50px;
+    color: #a4a2bc;
+}
+
+.contact-dev {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-dev span {
+    margin-bottom: 50px;
+    color: #f4f4f8;
+}
+
+.contact-dev span i {
+    font-size: 20px;
+    color: #f44c57;
+    margin-right: 15px;
+}
+
+.sosmed {
+    margin-top: 70px;
+}
+
+/* .sosmed i {
+    margin-right: 30px;
+} */
+
+.sosmed span i{
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    height: 30px;
+    color: #f4f4f8;
+    margin-right: 10px;
+    /* background-color: #10f136; */
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.sosmed span:hover i{
+    background-color: #f44c57;
+}
+
+.kecil {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4em;
+    right: 4em;
+    background-color: #9275d7;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 1;
+}
+
+.besar {
+    width: 170px;
+    height: 170px;
+    border-radius: 100% 0 15px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #f44c57;
+    -webkit-border-radius: 100% 0 15px 0;
+    -moz-border-radius: 100% 0 15px 0;
+    -ms-border-radius: 100% 0 15px 0;
+    -o-border-radius: 100% 0 15px 0;
+}
+/* Akhir Contact Information */
+
+
+/* Awal Contact Dev */
+.fill-form {
+    padding: 35px;
+}
+
+.fill-form form .user-detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .user-detail .input-box {
+    width: calc(100% / 2 - 20px);
+    margin: 0 10px;
+    margin-bottom: 30px;
+}
+
+.user-detail .input-box .details {
+    font-weight: 500;
+    margin-bottom: 50px;
+    font-size: 13px;
+    color: #a4a2bc;
+}
+
+.user-detail .input-box input {
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #a4a2bc;
+    outline: none;
+}
+
+.user-detail .input-box input:focus {
+    border-color: #472ecd;
+}
+
+.user-detail .input-box input:focus .details {
+    color: #472ecd;
+}
+
+form .website-need {
+    margin: 0 10px;
+}
+
+form .website-need .title-need {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+form .website-need .category {
+    display: flex;
+    width: 95%;
+    margin: 20px 0;
+    /* background: red; */
+    justify-content: space-between;
+}
+
+.website-need .category label {
+    display: flex;
+    align-items: center;
+}
+
+.website-need .category .dot {
+    height: 18px;
+    width: 18px;
+    background: transparent;
+    border: 1px solid #a4a2bc;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .3s ease;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.dot .fa-circle-check {
+    color: #472ecd;
+    display: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+#dot-1:checked ~ .category .one .fa-circle-check,
+#dot-2:checked ~ .category .two .fa-circle-check,
+#dot-3:checked ~ .category .three .fa-circle-check,
+#dot-4:checked ~ .category .four .fa-circle-check {
+    display: block;
+}
+
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three,
+#dot-4:checked ~ .category .four {
+    border: none;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .message {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+form .message .title-message {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+form .message textarea {
+    resize: none;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid #a4a2bc;
+    outline: none;
+}
+
+form .message textarea:focus {
+    border-color: #472ecd;
+}
+
+form .button {
+    height: 45px;
+    margin-top: 50px;
+    text-align: right;
+}
+
+form .button input {
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #f4f4f8;
+    background-color: #472ecd;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* Akhir Contact Dev */
