@@ -82,11 +82,13 @@ a {
     padding: 0 15rem;
     align-items: center;
     position: relative;
+    justify-content: space-around;
 }
 
 .img-home {
     position: relative;
     bottom: -35.5px;
+    width: 400px;
 }
 
 .sosmed-home {
@@ -289,7 +291,7 @@ button.btn1:hover::before{
 /* Awal Skills */
 .skills {
     width: 100%;
-    height: 60rem;
+    height: max-content;
     padding: 4rem 15rem;
     background-color: #1F2235;
     display: flex;
@@ -1312,6 +1314,39 @@ textarea.input {
 
 
 @media (max-width: 850px) {
+    .home {
+        padding: 0 5rem;
+    }
+
+    .home .info-home .sosmed-home {
+        margin-left: 70px;
+    }
+
+    .home .info-home .info-name {
+        margin-left: 70px;
+    }
+
+    .home .info-home button {
+        margin-left: 70px;
+    }
+
+    .home .img-home {
+        width: 300px;
+        bottom: -87px;
+    }
+
+    .skills {
+        padding: 4rem 5rem;
+    }
+
+    .about {
+        padding: 4rem 5rem;
+    }
+
+    .project {
+        padding: 4rem 5rem;
+    }
+
     .form {
         grid-template-columns: 1fr;
     }
