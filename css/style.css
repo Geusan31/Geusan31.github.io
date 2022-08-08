@@ -82,7 +82,7 @@ a {
     padding: 0 15rem;
     align-items: center;
     position: relative;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .img-home {
@@ -537,9 +537,12 @@ hr {
 /* Awal Project */
 .project {
     width: 100%;
-    height: 60rem;
+    height: max-content;
     padding: 4rem 15rem;
     background-color: #1F2235;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .up-project {
@@ -558,11 +561,17 @@ hr {
 }
 
 .my-project {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
     gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+.lebar-project {
+    min-width: 30ch;
 }
 
 .project-satu {
@@ -572,7 +581,6 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 10%;
-    max-width: 37ch;
     border-radius: .5rem;
     overflow: hidden;
     margin: 0;
@@ -588,7 +596,8 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    max-width: 37ch;
+    /* max-width: 37ch; */
+    /* min-width: 29ch; */
     border-radius: .5rem;
     overflow: hidden;
     margin: 0;
@@ -604,7 +613,8 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    max-width: 37ch;
+    /* max-width: 37ch; */
+    /* min-width: 29ch; */
     border-radius: .5rem;
     overflow: hidden;
     margin: 0;
@@ -620,7 +630,8 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    max-width: 37ch;
+    /* max-width: 37ch; */
+    /* min-width: 29ch; */
     border-radius: .5rem;
     overflow: hidden;
     margin: 0;
@@ -636,7 +647,8 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    max-width: 37ch;
+    /* max-width: 37ch; */
+    /* min-width: 29ch; */
     border-radius: .5rem;
     overflow: hidden;
     margin: 0;
@@ -652,7 +664,8 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 10%;
-    max-width: 37ch;
+    /* max-width: 37ch; */
+    /* min-width: 29ch; */
     border-radius: .5rem;
     overflow: hidden;
     margin: 0;
@@ -667,13 +680,13 @@ hr {
     padding: var(--padding);
     padding-bottom: 10px;
     background: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / .1) 20%, hsl(0 0% 0% / 1));
-    transform: translateY(45%);
+    transform: translateY(50%);
     transition: transform 500ms ease;
     cursor: pointer;
-    -webkit-transform: translateY(45%);
-    -moz-transform: translateY(45%);
-    -ms-transform: translateY(45%);
-    -o-transform: translateY(45%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
     -webkit-transition: transform 500ms ease;
     -moz-transition: transform 500ms ease;
     -ms-transition: transform 500ms ease;
